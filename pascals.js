@@ -1,5 +1,5 @@
 var generate = function(numRows) {
-    if (numRows < 1) { return [] }
+  if (numRows < 1) { return [] }
   var triangle = [[1]];
   for (var i = 0; i < numRows - 1; i++) {
       newT = [1];
