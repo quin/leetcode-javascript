@@ -9,5 +9,28 @@ var reverseList = function(head) {
       current = temp;
     }
   }
-  return previous  
+  return previous
 };
+
+
+
+function m(n) {
+	if ( n <= 0) return 1;
+	return m(n - 1)
+}
+
+x = m(100)
+
+function hi(array) {
+	m = array[0];
+	index = 0;
+	for (var i = 1; i < array.length; i++) {
+		if (array[i] < m) {
+			index = i;
+			m = array[i];
+		}
+	}
+	return index;
+}
+
+[1,2,3]

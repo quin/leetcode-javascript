@@ -24,5 +24,4 @@ var maximalSquare = function(matrix) {
     }
   }
   return maxSoFar * maxSoFar;
-
 };
