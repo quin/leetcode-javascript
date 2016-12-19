@@ -15,10 +15,10 @@ function subArraySum(arr, sum) {
 	var end = 0;
 	while (end < arr.length) {
     if (currSum == sum) {
-      return start + end;
+      return start + end + 1;
     }
 
-    if (currSum <= sum) {
+    if (currSum < sum) {
 	    end++;
 	    if (end < arr.length) {
 				currSum = currSum + arr[end];
@@ -28,4 +28,25 @@ function subArraySum(arr, sum) {
       start++;
 	  }
 	}
+}
+
+
+ A = [100,1,2,3,-1,0,0,5,6,7], k = 5,
+ // return 6 (which is the length of [1,2,3,-1,0,0])
+
+subArraySum(A, k)
+
+function maxSubArr(arr, k) {
+	var sums = {};
+	start = 0;
+	best_start = 0;
+	max_len = 0;
+	curr_sum = 0;
+
+	for (var i = 0; i < arr.length; i++) {
+		if (hash.hasOwnProperty[curr_sum - k]) {
+			if (start - sums[curr_sum -k] > max_len) 
+		}
+	}
+
 }
